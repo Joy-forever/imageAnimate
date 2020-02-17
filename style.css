@@ -1,0 +1,89 @@
+#image {
+  position: absolute;
+  z-index: -1;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  animation-name: imageBack;
+  animation-duration: 2s;
+  animation-fill-mode:forwards;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s;
+
+}
+
+@keyframes imageBack {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+li {
+  list-style: none;
+  font-family: fantasy;
+}
+a {
+  color: black;
+}
+a:hover{
+  color: pink;
+}
+div {
+  width: 190px;
+  height: 700px;
+  position: relative;
+  background-color:  white;
+  animation-name: boxMove;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+}
+@keyframes boxMove{
+  0%   {
+    background-color: white;
+    left:0px;
+    top:200px;
+
+  }
+  100% {
+    background-color: white;
+    left:0px;
+    top:0px;
+  }
+}
+
+
+
+h1{
+  position: absolute;
+  opacity: 0;
+  margin-left: 40%;
+  margin-top: 20%;
+  animation: title 4s ease 1s forwards 1;
+  color: white;
+}
+
+@keyframes title {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+#navBox {
+  position: absolute;
+  z-index: -1;
+  left: 0px;
+  width: 30%;
+  height: 100%;
+  animation-name: imageBack;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s;
+}
